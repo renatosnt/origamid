@@ -25,26 +25,12 @@ const mario = {
   ativa: false,
 };
 
-const ativo = {
-  color: "green",
-};
-
-const inativo = {
-  color: "red",
-};
-
 const App = () => {
-  const dados = mario;
-  const precos = dados.compras.map((compra) => {
-    return +compra.preco.replace("R$ ", "");
-  });
+  const dados = luana;
 
-  let total = 0;
-  precos.map((preco) => (total = total + preco));
-  let gastandoMuito = false;
-  if (total > 10000) {
-    gastandoMuito = true;
-  }
+  const total = dados.compras
+    .map((compra) => Number(compra.preco.replace("R$ ", "")))
+    .reduce((acc, atual) => acc + atual);
 
   return (
     <div>
@@ -52,12 +38,12 @@ const App = () => {
       <p>Idade: {dados.idade}</p>
       <p>
         Situação:{" "}
-        <span style={dados.ativa ? ativo : inativo}>
+        <span style={{ color: dados.ativa ? "green" : "red" }}>
           {dados.ativa ? "Ativa" : "Inativa"}
         </span>
       </p>
-      <p>Total gasto: {total}</p>
-      {gastandoMuito ? <p>Você está gastando muito.</p> : ""}
+      <p>Total gasto: R$ {total}</p>
+      {total > 10000 && <p>"Você está gastando"</p>}
     </div>
   );
 };
