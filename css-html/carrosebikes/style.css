@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 40px;
+}
+.produto {
+  background-color: #111;
+  color: white;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 20px;
+  font-size: 20px;
+  margin: 70px;
+}
+
+.descricao {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-comprar {
+  background-color: #febe01;
+  color: #332200;
+  padding: 15px;
+  border: none;
+  width: 200px;
+  border-radius: 4px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+span {
+  color: #febe01;
+}
