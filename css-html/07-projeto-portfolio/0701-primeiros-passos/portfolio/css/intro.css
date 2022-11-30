@@ -1,0 +1,26 @@
+.perfil {
+  max-width: 100%;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.introducao-texto h1 {
+  font-size: 4rem;
+}
+
+.introducao-texto p {
+  color: #525252;
+  font-size: 2rem;
+}
+
+.introducao-texto::after {
+  content: "";
+  width: 4rem;
+  height: 1rem;
+  color: #70da1c;
+}
