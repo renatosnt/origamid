@@ -1,12 +1,16 @@
-.perfil {
+.foto-perfil {
   max-width: 100%;
 }
 
-.introducao {
+.introducao-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+}
+
+.introducao-texto {
+  position: relative;
 }
 
 .introducao-texto h1 {
@@ -19,8 +23,12 @@
 }
 
 .introducao-texto::after {
-  content: "";
+  content: url("/img/detalhe.svg");
   width: 4rem;
   height: 1rem;
-  color: #70da1c;
+  position: absolute;
+  left: -50px;
+  top: -40px;
+  z-index: -1;
+  /* background-image: url("/img/detalhe.svg"); */
 }
