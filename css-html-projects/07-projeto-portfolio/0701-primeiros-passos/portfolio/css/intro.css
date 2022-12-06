@@ -1,25 +1,28 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
 .foto-perfil {
   max-width: 100%;
 }
 
-.introducao-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
+.introducao h1 {
+  font-size: 4rem;
+}
+
+.introducao p {
+  color: #525252;
+  font-size: 2rem;
 }
 
 .introducao-texto {
   position: relative;
-}
-
-.introducao-texto h1 {
-  font-size: 4rem;
-}
-
-.introducao-texto p {
-  color: #525252;
-  font-size: 2rem;
 }
 
 .introducao-texto::after {
@@ -30,5 +33,7 @@
   left: -50px;
   top: -40px;
   z-index: -1;
-  /* background-image: url("/img/detalhe.svg"); */
+}
+
+@media (max-width: 700px) {
 }
