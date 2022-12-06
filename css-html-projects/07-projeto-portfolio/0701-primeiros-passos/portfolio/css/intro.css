@@ -8,12 +8,11 @@
   align-items: center;
 }
 
-.foto-perfil {
-  max-width: 100%;
-}
-
 .introducao h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .introducao p {
@@ -21,19 +20,22 @@
   font-size: 2rem;
 }
 
-.introducao-texto {
-  position: relative;
-}
-
-.introducao-texto::after {
-  content: url("/img/detalhe.svg");
-  width: 4rem;
-  height: 1rem;
-  position: absolute;
-  left: -50px;
-  top: -40px;
+.introducao h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
   z-index: -1;
+  background: url("/img/detalhe.svg") no-repeat center;
+  position: absolute;
+  left: -40px;
+  top: -20px;
 }
 
 @media (max-width: 700px) {
+  .introducao-texto::after {
+    width: 10px;
+    height: 10px;
+    z-index: 2;
+  }
 }
