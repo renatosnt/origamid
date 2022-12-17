@@ -73,3 +73,34 @@
   border-radius: 4px;
   padding: 10px;
 }
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .experiencia .subtitulo {
+    color: #141414;
+    text-transform: capitalize;
+    max-width: initial;
+    font-size: 3rem;
+  }
+
+  .experiencia-texto {
+    font-size: 1.25rem;
+  }
+
+  .empresa-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+}
+
+@media (max-width: 400px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+}
