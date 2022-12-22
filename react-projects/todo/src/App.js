@@ -1,20 +1,12 @@
 import React from "react";
+import TaskList from "./TaskList";
 
 function App() {
-  const [list, setList] = React.useState(null);
-
-  function addTodo(text) {
-    const newTodos = [...list, { text }];
-    setList(newTodos);
-  }
-
-  function markTodo(index) {
-    const newTodos = [...list];
-    newTodos[index].isDone = true;
-    setList(newTodos);
-  }
-
-  return <div></div>;
+  return (
+    <div>
+      <TaskList />
+    </div>
+  );
 }
 
 export default App;
