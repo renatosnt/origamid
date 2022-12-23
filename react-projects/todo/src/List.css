@@ -1,0 +1,43 @@
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-list {
+  background: rgba(242, 242, 242, 0.5);
+  display: inline-block;
+  list-style: none;
+  padding: 1rem;
+  border-radius: 4px;
+  max-width: 300px;
+}
+
+.task {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 1px 0px;
+  max-width: 100%;
+  padding: 1rem 0.825rem;
+}
+
+.task .icons {
+  grid-column: 2;
+  justify-self: right;
+}
+
+.task input {
+  justify-self: left;
+  grid-column: 1;
+}
+.marked {
+  background-color: #e6e6e6;
+  color: rgba(0, 0, 0, 0.5);
+}
+.icons {
+  color: #000000;
+}
+.list-title {
+  font-weight: 700;
+}

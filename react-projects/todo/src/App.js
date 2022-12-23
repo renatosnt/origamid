@@ -1,11 +1,13 @@
 import React from "react";
-import Header from "./components/Header";
-import GlobalStyle from "./styles/global";
+import Board from "./Board";
+import Pomodoro from "./Pomodoro";
+import "normalize.css";
+import "./App.css";
 function App() {
   return (
-    <div>
-      <GlobalStyle />
-      <Header />
+    <div className="app">
+      {/* <Pomodoro /> */}
+      <Board />
     </div>
   );
 }
