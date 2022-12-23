@@ -1,10 +1,11 @@
 import React from "react";
-import TaskList from "./TaskList";
-
+import Header from "./components/Header";
+import GlobalStyle from "./styles/global";
 function App() {
   return (
     <div>
-      <TaskList />
+      <GlobalStyle />
+      <Header />
     </div>
   );
 }
