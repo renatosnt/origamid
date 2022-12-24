@@ -4,7 +4,7 @@
 }
 
 .task-list {
-  background: rgba(242, 242, 242, 0.5);
+  background: rgba(254, 242, 242, 0.2);
   display: inline-block;
   list-style: none;
   padding: 1rem;
@@ -14,7 +14,7 @@
 
 .task {
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: auto 1fr;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 1px 0px;

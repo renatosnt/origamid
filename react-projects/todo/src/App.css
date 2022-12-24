@@ -1,3 +1,13 @@
 body {
-  background-color: #5353c6;
+  background-color: #2b2d42;
+  font-family: sans-serif;
 }
+
+h1 {
+  font-family: sans-serif;
+  color: #fe9000;
+  margin: 20px;
+}
+
+/* /* With # */
+/* #2b2d42, #606c38, #fe9000, #e8f7ee, #b8c4bb */

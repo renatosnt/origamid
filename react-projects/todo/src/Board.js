@@ -5,11 +5,9 @@ import "./Board.css";
 const Board = () => {
   return (
     <div className="board">
-      <List title="Segunda" />
-      <List title="Terça" />
-      <List title="Quarta" />
-      <List title="Quinta" />
-      <List title="Sexta" />
+      <List title="A fazer" />
+      <List title="Fazendo" />
+      <List title="Concluidas" />
     </div>
   );
 };

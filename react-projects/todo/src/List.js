@@ -1,10 +1,17 @@
 import React from "react";
 import "./List.css";
 import { BiEditAlt, BiTrashAlt } from "react-icons/bi";
+import { useDrag } from "react-dnd";
 
 const List = ({ title }) => {
   const [input, setInput] = React.useState("");
   const [list, setList] = React.useState([]);
+  const [{ isDragging }, dragRef] = useDrag({
+    type: "TASK",
+    collect: (monitor) => ({
+      isDragging: monitor.isDragging(),
+    }),
+  });
 
   function handleInput({ target }) {
     setInput(target.value);
@@ -41,6 +48,8 @@ const List = ({ title }) => {
             key={task.id}
             className={task.isEnabled ? "task" : "task marked"}
             onClick={() => markTask(task.id)}
+            ref={dragRef}
+            isDragging={isDragging}
           >
             <span>{task.text}</span>
             <div className="icons">
