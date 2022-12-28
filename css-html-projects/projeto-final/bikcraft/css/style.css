@@ -16,6 +16,22 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* --------------------------------- header --------------------------------- */
 
 .header-bg {
@@ -29,10 +45,6 @@ a {
   align-items: center;
   gap: 20px;
   padding: 20px;
-  box-sizing: border-box;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .header-menu {
@@ -96,13 +108,50 @@ a {
   }
 }
 
-@media (max-width: 350px) {
-  .header-menu {
-    gap: 5px;
-  }
-  .header-menu a {
-    padding: 10px 20px;
-  }
+/* -------------------------------------------------------------------------- */
+/* ------------------------------- introdução ------------------------------- */
+
+.introducao-bg {
+  background-color: #000000;
+  color: white;
 }
 
-/* -------------------------------------------------------------------------- */
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 0 40px;
+  padding: 0 20px;
+}
+
+.introducao h1 {
+  font-size: 4rem;
+  margin-bottom: 32px;
+  line-height: 1.125;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #b2b2b2;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.dot {
+  color: #ffbb00;
+}
+
+.introducao a {
+  color: #332200;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  background: linear-gradient(180deg, #ffbf00 0%, #f2a50c 100%);
+  border-radius: 4px;
+  font-weight: 600;
+  display: inline-block;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.introducao a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
