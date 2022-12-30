@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  height: 2000px;
 }
 
 ul {
@@ -114,6 +115,7 @@ p {
 .introducao-bg {
   background-color: #000000;
   color: white;
+  box-shadow: inset 0 -120px #ffffff;
 }
 
 .introducao {
@@ -121,7 +123,7 @@ p {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 0 40px;
-  padding: 0 20px;
+  padding-bottom: 20px;
 }
 
 .introducao h1 {
